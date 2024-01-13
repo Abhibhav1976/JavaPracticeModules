@@ -5,7 +5,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        if(go == 0) {
+        int go = 0;
+        while(go == 0) {
             int a = sc.nextInt();
             int b = sc.nextInt();
             int operator = sc.nextInt();
@@ -37,10 +38,8 @@ public class Main {
                 default:
                     System.out.println("Invalid Operator");
             }
+            go = sc.nextInt();
         }
-        else {
             System.out.println("Thank you for using simple calculator");
-        }
-        int go = sc.nextInt();
     }
 }
